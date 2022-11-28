@@ -1,0 +1,58 @@
+:root{
+    --cp1: #CFF5E7;
+    --cp2: #A0E4CB;
+    --cp3: #59C1BD;
+    --cp4: #0D4C92;
+}
+
+.form-control {
+    margin: 1rem 0;
+}
+
+.form-control label,
+.form-control input,
+.form-control textarea {
+    display: block;
+}
+
+.product-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-control input,
+.form-control textarea {
+    border: 1px solid #a1a1a1;
+    font-family: inherit;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+}
+
+.form-control input:focus,
+.form-control textarea:focus{
+    outline-color: var(--cp3);
+}
+
+button {
+    font: inherit;
+    border: 1px solid var(--cp3);
+    color: var(--cp3);
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+button:hover {
+    transition: .3s all;
+    background-color: var(--cp3);
+    color: white;
+}
+
+.form-control input.invalid,
+.form-control textarea.invalid{
+    border-color: red;
+}
